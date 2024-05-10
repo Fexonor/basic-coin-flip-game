@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>06 exercise</title>
+  </head>
+  <body>
+    <p>Head or Tails</p>
+    <button
+      onclick="
+     const num = Math.random();
+
+     let result = '';
+     
+     if (num <= 0.5){
+      result = 'Head';
+     }else if (num > 0.5){
+      result = 'tails';
+     }
+     
+     alert(result);"
+    >
+      play
+    </button>
+
+    <p>Guess</p>
+
+    <button
+      onclick="
+      const num = Math.random();
+
+     let result = '';
+     
+     if (num <= 0.5){
+      result = 'Head';
+     }else if (num > 0.5){
+      result = 'tails';
+     }
+     
+     if (result === 'Head'){
+      alert('its head you win');
+     }else if (result === 'tails'){
+      alert('its Tails you lose')
+     }
+     "
+    >
+      Head
+    </button>
+
+    <button
+      onclick="
+      const num = Math.random();
+
+     let result = '';
+     
+     if (num <= 0.5){
+      result = 'Head';
+     }else if (num > 0.5){
+      result = 'tails';
+     }
+     
+     if (result === 'Head'){
+      alert('its head you lose');
+     }else if (result === 'tails'){
+      alert('its Tails you win')
+     }
+     "
+    >
+      Tails
+    </button>
+    <script></script>
+  </body>
+</html>
